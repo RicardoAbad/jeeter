@@ -1,0 +1,60 @@
+name = Jeeter 2
+description = Tema compuesto para el framework jeet y Stylus preprocessor.
+core = 7.x
+
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+regions[page_top]       = 'Page top'
+
+;; Real usefull regions
+regions[top_bar_left]         = 'Barra superior Izquierda'
+regions[top_bar_right]         = 'Barra superior Derecha'
+regions[header]         = 'Header'
+regions[main_menu]     = 'Menu Principal'
+regions[important]    = 'Importante'
+regions[help]           = 'Ayuda'
+regions[sidebar_first]  = 'Lateral Izquierdo'
+regions[content]        = 'Contenido'
+regions[sidebar_second] = 'Lateral Derecho'
+regions[pre_footer_left]         = 'Pre Footer Izquierdo'
+regions[pre_footer_center]         = 'Pre Footer Central'
+regions[pre_footer_right]         = 'Pre Footer Derecho'
+regions[footer]         = 'Footer'
+regions[footer_menu]     = 'Menu en el footer'
+
+
+regions[page_bottom]    = 'Page bottom'
+
+
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Styles
+;;;;;;;;;;;;;;;;;;;;;
+
+stylesheets[all][] = font-awesome/css/font-awesome.min.css
+stylesheets[all][] = css/hover-min.css
+stylesheets[all][] = css/style.css
+
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Javascript
+;;;;;;;;;;;;;;;;;;;;;
+
+scripts[] = js/modernizr.min.js
+scripts[] = js/goup.js
+scripts[] = js/custom.js
+
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Settings
+;;;;;;;;;;;;;;;;;;;;;
+
+settings[front_bg_img] = 0
+settings[imagen] = './sites/all/themes/jeeter_2/images/custom-header-bg.jpg'

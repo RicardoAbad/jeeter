@@ -1,0 +1,251 @@
+/*Colorines y demas efectos de estilo visual*/
+
+
+//edit(rgba(252,110,81,0.25))
+
+/*.pace-background
+	background: #1b1b1b
+	color: #FCFF98*/
+
+$_link_col = #1975A1
+$_link_col_hover = #2098d1
+
+html
+body
+	background: #fff
+	color: #555
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+
+	
+
+/* ----------------------------------------------------------------- General ----------------------------------------------------------------- */
+
+#top-zone.custom-header-bg
+	background: transparent url(../images/custom-header-bg.jpg) fixed no-repeat center top
+	background-size: cover
+	
+.front 
+	#site-name a
+		color:#fff
+		text-shadow: 1px 1px 0 #333
+	#site-slogan
+		color: #000
+	
+#page-title-wrapper
+	background: #1b1b1b
+	color: #bbb
+	
+.block-title
+.contact-title
+#map h3
+	color: #222;
+	
+/*Breadcrumb*/
+#breadcrumb-wrapper 
+	background: #333
+.breadcrumb a
+	color: #B89C2B
+	&:hover
+		color: lighten(#B89C2B, 20%)
+.breadcrumb .active
+.breadcrumb .separator
+	color: #aaa
+		
+/*  Search form block  */
+.custom-search-block
+	background: #1b1b1b
+	.form-text
+		color: #ddd
+		background: transparent
+		border: none
+		border-bottom: 1px dotted #666
+		font-size: 18px
+		font-family: "Kite One",sans-serif
+		max-width: 80%
+span#search-trigger
+	background: #1b1b1b
+	color: #fff
+	cursor: pointer
+	transition: all .25s ease-out
+	&:hover
+	&.active
+		background: #ddd
+		color: #1b1b1b
+	&.active:hover
+		background: #3c3c3c
+		color: #fff
+	&.active:after
+		content: ""
+		display: block
+		position: absolute
+		top: 12px
+		right: 0px
+		margin-right: 46px
+		width: 0
+		height: 0
+		border: 12px solid transparent
+		border-right-color: #ddd
+		transition: border-color .25s ease-out
+	&.active:hover:after
+		border-right-color: #3c3c3c
+	
+a
+	text-decoration: none
+	color: $_link_col
+	&:hover
+		color: $_link_col_hover
+.node-title
+	a
+		padding: 2px 20px
+		&:hover
+			//color: #fff
+blockquote
+	border-left: 5px solid #ddd
+	background: rgba(243, 243, 243, 0.67)
+
+
+
+.btn 
+a.btn
+	color: #FFF
+	padding: 2px 6px
+	font-family: "Open Sans",Helvetica,Arial,sans-serif
+	font-size: 14px
+	font-weight: 600
+	letter-spacing: 0.1em
+	text-shadow: none
+	border: medium none
+	text-transform: uppercase
+	border-radius: 4px
+
+.btn-block 
+	display: block
+	width: 100%
+
+.btn.btn-padding
+a.btn.btn-padding
+	padding: 10px 20px
+	
+.btn-blue
+	background: none repeat scroll 0% 0% #3498DB
+	box-shadow: 0px 2px #2980B9
+.btn-blue:hover
+.btn-blue:focus
+.btn-blue:active
+	color: #FFF
+	background-color: #2980B9
+	border-color: #269ABC
+	
+.btn-red
+	background: none repeat scroll 0% 0% #E74C3C
+	box-shadow: 0px 2px #C0392B
+.btn-red:hover
+.btn-red:focus
+.btn-red:active
+	background: none repeat scroll 0% 0% #C0392B;
+	color: #FFF
+	border-color: #AC2925
+
+li a.active.btn
+	color: #fff
+	
+
+/*-----------------System messages------------------*/
+div.messages
+	background-position: 8px 50%
+	background-repeat: no-repeat
+	border: 1px solid
+	margin: 6px 0px
+	padding: 10px 20px 10px 50px
+
+div.error
+	background-image: url("../../../../../misc/message-24-error.png")
+	border-color: #EC7C4B
+div.error
+table tr.error
+	background-color: #EC7C4B;
+
+div.warning
+	background-image: url("../../../../../misc/message-24-warning.png")
+	border-color: #F9C700
+div.warning
+table tr.warning
+	background-color: #F9C700
+
+div.status
+	background-image: url("../../../../../misc/message-24-ok.png")
+	border-color: #4D8F46
+div.status
+table tr.ok
+	background-color: #4D8F46
+
+.error
+	color: #EC7C4B
+.warning
+	color: #F9C700
+.ok
+	color: #4D8F46
+div.error
+div.status
+div.warning
+	color: #FFF
+
+span.close-button
+	color: #fff
+	cursor: pointer
+	transition: all .25s ease-out
+	&:hover
+		color: #333
+
+
+/*-----------------Comentarios------------------*/
+//pre-comments (node-links)
+.node-links-wrapper ul
+	padding: 20px 0
+.node-links-wrapper li
+	list-style-type: none
+	
+.comments-title-header
+	font-size: 1.8em
+	margin: 30px 0 70px
+	border-bottom: 2px solid #ddd
+	padding: 30px 0 20px
+	color: #111
+	letter-spacing: 3px
+
+#block-system-main article.comment
+	background: #eee
+	border-top: 3px solid #e7e7e7
+	.comment-arrow
+		border-width: 21px
+		border-style: solid
+		border-color: transparent #eee transparent transparent
+		background: transparent
+	.new
+		background: #D42222
+		color: #fff
+		border-top: 2px solid #f00
+		box-shadow: -3px 3px 0px #DBDBDB
+.indented
+	.comment-arrow
+		border-color: transparent transparent #eee transparent !important
+	.comment
+		border-left: 3px solid #e7e7e7
+		border-top: 0 none !important
+
+
+/*Prefooter */
+#prefooter
+	background: #eaeaea
+
+
+
+/*Footer (general)*/		
+#footer
+	background: #dbdbdb
+	color: #3d3d3d
+	
+
+/*Footer (contenido)*/
+#footer-wrapper
+	background: #d0d0d0	

@@ -1,0 +1,3 @@
+cd ../..
+cd xampp/htdocs/jeeter/sites/all/themes/jeeter_2/stylus
+stylus -u nib -u jeet -u rupture -w index.styl -o ../css/style.css

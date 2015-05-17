@@ -1,0 +1,210 @@
+/*! - --------------------------------- Main MENU --------------------------------- - */
+
+
+/* MENU ICON */
+/*  Layout  */
+.navicon 
+	position: fixed
+	height: 35px
+	width: 45px
+	top: 0px
+	left: 0px
+	padding: 4px
+	z-index: 1010
+	box-sizing: content-box
+	transition: left 0.4s ease-out
+	&.active
+		left:71px
+		margin-left:-26px
+		top: 30px
+	#nav-toggle
+		position: absolute
+		left: 9px
+		top: 9px
+		cursor: pointer
+		padding: 10px 35px 16px 0px
+		span
+		span:before
+		span:after
+			transition: all 500ms ease-in-out
+			cursor: pointer
+			border-radius: 1px
+			height: 5px
+			width: 35px
+			position: absolute
+			display: block
+			content: ''
+		span:before
+			top: -10px
+		span:after
+			bottom: -10px
+		&.active span
+			&:before
+				transform: rotate(45deg)
+				top: 0
+			&:after
+				transform: translateY(-10px) rotate(-45deg)
+				top: 10px
+.admin-menu .navicon
+	top: 29px
+	
+
+
+
+/*  Style  */
+/*.navicon
+	background: rgba(255, 255, 255, 0.5)
+	&.active
+		background: rgba(255, 255, 255, 0)*/
+#nav-toggle
+	span
+	span:before
+	span:after
+		background: #000000
+	&:hover
+		span
+		span:before
+		span:after
+			background: #B89C2B
+	&.active span 
+		background-color: transparent
+	&.active
+		span:before
+		span:after
+			background: #FCFF98
+	&.active:hover
+		span:before
+		span:after
+			background: #B89C2B
+	
+
+
+
+
+
+
+
+
+/* --------------------- OVERLAY LAYER WITH MAIN MENU BLOCK --------------------- */
+
+/*  Layout  */
+#navigation
+	display: none
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	z-index: 1000
+	margin-top: -1px
+.main-menu-wrapper
+.region-main-menu 
+	width: 100%
+	height: 100%
+#block-system-main-menu
+	display: table
+	max-width: 100%
+	width: 70%
+	margin-left: 15%
+	height: 100%
+	#main-menu 
+		display: table-cell
+		vertical-align: middle
+		margin: 0
+		padding: 0
+		overflow-y: auto
+		a
+			display:block
+			padding: 0
+
+#block-system-main-menu .menu
+	margin: 0
+	padding: 0
+#block-system-main-menu .menu li
+	margin: 16px auto
+	padding: 0
+.admin-menu #navigation
+	top: 29px
+	
+
+/*  Style  */
+
+#navigation
+	background-color: rgba(0,0,0, .96)
+	a
+		text-decoration: none
+		color: #FCFF98
+		opacity: .7
+		transition: all .3s ease-out
+		&:hover
+			color: darken(#FCFF98, 30%)
+			opacity: 1
+		span
+			color: #fff
+/*#main-menu>li
+	border-top: 1px solid #111
+	border-bottom: 1px solid #222*/
+#block-system-main-menu .menu li
+	list-style: none inside
+#block-system-main-menu .menu .menu a
+	color: lighten(#FCFF98, 20%)
+	opacity: 0.16
+	&:hover
+		color: darken(#FCFF98, 30%)
+#block-system-main-menu .expanded:hover>.menu a
+	opacity: 0.6
+	&:hover
+		opacity: 1
+		
+
+
+/*  Fonts  */
+
+#navigation
+#block-system-main-menu .menu
+	text-align: left
+#navigation
+	a
+		font-size: 24px
+		font-weight: 300
+		letter-spacing: 2px
+		line-height: 18px
+		&:hover
+			letter-spacing: 3px
+		/*&.active
+			text-decoration: underline*/
+	span
+		font-size: 17px
+#block-system-main-menu .menu .menu a
+	font-size: 1.6em
+	text-align: right
+	
+
+/*  Responsive  */
+
++below(767px)		
+	.navicon 
+		position: absolute
+		&.active
+			top: 0
+			left: 100%
+			margin-left: -49px
+	#navigation
+		position: relative
+	#block-system-main-menu
+		stack()
+		#main-menu
+			display: block
+			padding-top: 53px
+			a
+				opacity: 1
+				padding: 0 20px
+				&:hover
+					letter-spacing: 2px
+				&:hover
+				&.active
+					background: #161617				
+	#block-system-main-menu a
+		font-size: 1.6em
+	#block-system-main-menu .menu .menu a
+		font-size: 1.4em

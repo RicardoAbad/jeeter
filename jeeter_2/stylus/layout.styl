@@ -1,0 +1,379 @@
+/*Estructura: posicion y otras disposiciones*/
+
+*
+*:after
+*:before
+	box-sizing: border-box
+	
+	
+/*.pace-background
+	display: table
+	width: 100%
+	height: 100%
+	position: fixed
+	top: 0
+	left: 0
+	opacity: 1
+	transition: opacity 1s ease-out
+	z-index: 1020;
+	span
+		display: table-cell
+		vertical-align: middle
+		text-align: center
+		width: 100%
+		height: 100%
+.pace-done .pace-background
+.pace-done .pace-background span
+	opacity: 0*/
+
+
+body
+	min-height: 100%
+	position: relative
+	overflow-x: hidden
+	/*overflow-y:hidden*/
+	margin-bottom: 0
+	margin-top: 0;
+/*body.pace-done
+	overflow-y: auto !important*/
+	
+body.admin-menu
+	margin-top: 29px !important
+
+body
+#page-wrapper
+#page
+#top-zone
+#front-top
+#top-bar
+#branding
+#header
+#page-title-wrapper
+#breadcrumb-wrapper
+#important
+#ayudas
+#main-wrapper
+#main
+#prefooter
+#footer
+#footer-menu-wrapper
+#footer-wrapper
+	center()
+	
+.clearfix
+	cf()
+	
+#top-zone
+	padding-bottom: 100px
+
+#top-bar
+	position: relative
+	//position: absolute
+	top: 0
+	width: 100%
+.top-bar-left
+	column(1/2, gutter: 0)
+	min-height: 60px
+.top-bar-right
+	column(1/2, gutter: 0)
+	float: right
+	min-height: 60px
+	
+
+#header
+	//padding-top: 60px
+	padding-top: 0px
+	position: relative
+#logo
+#name-and-slogan
+	display: block
+	margin: 0
+
+#site-name
+#site-slogan
+	display: inline-block
+	
+#site-name
+	font-size: 2em
+#site-slogan
+	font-size: 1.6em
+.front 
+	#site-name
+		font-size: 3em
+	#site-slogan
+		font-size: 2.4em
+	
+.mini-logo-img
+	max-width: 64px
+	height: auto
+
+/*for scrollReveal plugin module*/
+.front
+	#logo
+	#site-name
+	#site-slogan
+		visibility: hidden
+
+	
+#page-title-wrapper
+	padding: 20px 0
+	
+
+
+/*Breadcrumb*/
+#breadcrumb-wrapper 
+	padding: 20px 0 12px
+.breadcrumb .separator
+	position: relative
+	top: 6px
+
+
+/*Mensajes y ayuda*/
+#ayudas
+	padding: 20px
+.messages
+	padding: 10px 50px
+	position: relative
+span.close-button
+	position: absolute
+	right: 10px
+	top: 50%
+	margin-top: -15px
+
+
+/*sidebar classes*/
+.two-sidebars 
+	#sidebar-first 
+	#sidebar-second
+		span(1/5)
+	#content
+		span(3/5)
+
+.one-sidebar
+	#sidebar-first 
+	#sidebar-second
+		span(1/4)
+	#content
+		span(3/4)
+		
+
+/*  Generics created for easy use - (NO padding)  */
+.span-66
+	span(2/3)
+.span-33
+	span(1/3)
+	
+.span-50
+	span(1/2)
+.span-50-center
+	span(1/2, offset: 1/4)
+.span-25
+	span(1/4)
+	
+.span-60
+	span(6/10)
+.span-40
+	span(4/10)
+	
+.span-80
+	span(8/10)
+.span-20
+	span(2/10)
+	
+
+/*  Generics created for easy use - (SI padding)  */
+.col-66
+	col(2/3)
+.col-33
+	col(1/3)
+	
+.col-50
+	col(1/2)
+.col-50-center
+	col(1/2, offset: 1/4)
+.col-25
+	col(1/4)
+	
+.col-60
+	col(6/10)
+.col-40
+	col(4/10)
+	
+.col-80
+	col(8/10)
+.col-20
+	col(2/10)
+	
+/* ----------------------------------------- contenido principal ----------------------------------------- */
+body:not(.front) #content
+#sidebar-first 
+#sidebar-second
+	padding: 20px
+	
+#block-search-form 
+	margin-top: 0
+	margin-right: 0
+	.custom-search-block
+		display: inline-block
+		position: relative
+		top: 0px
+		width: 0
+		opacity: 0
+		height: 48px
+		padding: 0px 58px 10px 10px
+		overflow: hidden
+		transition: all .25s ease-out
+		&.visible
+			opacity: 1
+			width: 100%
+	#search-trigger
+		padding: 10px
+		position: absolute 
+		right: 0
+		top: 0
+	
+ul.primary li
+	display: inline-block
+ul.primary li a
+	display: block
+	padding: 5px 20px
+	position: relative
+	top: 1px
+	border-radius: 3px 3px 0 0
+	
+#block-system-main
+	article
+		padding: 20px
+
+
+.views-exposed-widgets 
+	margin: 20px auto
+	text-align: center
+	
+.views-exposed-form .views-exposed-widget
+	float: none
+	padding: .5em 1em 0 0
+	display: inline-block
+.views-fluidgrid-wrapper
+	margin: auto
+.masonry-brick 
+	margin: 6px 0
+	.views-fluidgrid-item-inner
+		position: relative
+	h3
+	h4
+		position: absolute
+		left: 0
+		width: 100%
+		margin: 0 auto
+		text-align: center
+		opacity: 0
+		transition: all .25s ease-out
+		background: #fff
+	h3
+		top: 0px
+	h4
+		bottom: 0px
+	&:hover
+		h3,h4
+			opacity: 1
+			
+
+/*HTML Elements*/
+iframe
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	
+blockquote
+	margin: 32px 0 32px 16px
+	padding: 1px 16px
+	
+img
+	max-width: 100%
+	height: auto
+
+input[type="submit"]
+	cursor: pointer
+
+table
+	width: 100%
+	max-width: 100%
+
+a
+	transition: all .25s ease-out
+
+
+/*-----------------Comentarios------------------*/
+//pre-comments (node-links)
+.node-links-wrapper li
+	display: inline-block
+#block-system-main article.comment
+	position: relative
+	margin: 40px 20px 100px
+	padding: 60px 20px 20px;
+	.comment-arrow
+		width: 42px
+		height: 42px
+		position: absolute
+		left: -42px
+		top: 42px
+		margin-top: -21px
+	.comment-picture
+		position: absolute
+		top: -30px
+		left: 50%
+		margin-left: -50px
+		.user-picture
+			max-width: 100px
+			max-height: 100px
+			overflow: hidden
+	.new
+		position: absolute
+		right: -3px
+		top: -6px
+		padding: 3px 5px
+.indented
+	.comment-arrow
+		top: -42px !important
+		left: 21px !important
+		margin-top: 0 !important
+		
+.form-actions
+	text-align: center
+	input
+		margin: 10px;
+
+
+
+/*prefooter*/
+#prefooter
+	padding: 40px 3%
+.prefooter-left
+.prefooter-center
+.prefooter-right
+	col(1/3)
+	
+
+/*Footer menu region*/
+.footer-menu-wrapper
+	padding: 20px
+.footer-menu li
+	display: inline
+	
+
+/*Footer*/
+.region-footer
+	padding: 20px
+	
+
+
+
+
+/*  Contact-page-tpl.php (mapa)  */
+.map
+	width: 100%
+	height: 500px
+	max-width: 100%

@@ -1,0 +1,42 @@
++below(767px)
+	.top-bar-left
+	.top-bar-right
+	#content
+	#sidebar-first
+	#content
+	#sidebar-first 
+	#sidebar-second
+	.prefooter-left
+	.prefooter-center
+	.prefooter-right
+	.gallery-row
+		display: block !important
+		clear: both !important
+		float: none !important
+		width: 100% !important
+		margin-left: auto !important
+		margin-right: auto !important
+	.col-66
+	.col-33
+	.col-50
+	.col-25
+	.col-60
+	.col-40
+	.col-80
+	.col-20
+		stack()
+
+
++above(767px)
+	.two-sidebars 
+		#sidebar-first
+			shift(-3/5)
+		#content
+			shift(1/5)
+	.front
+		.node-teaser
+			col(1/2, cycle: 2)
+	.search-result
+		col(1/2, cycle: 2)
+	.gallery-row
+		col(1/3, cycle: 3)

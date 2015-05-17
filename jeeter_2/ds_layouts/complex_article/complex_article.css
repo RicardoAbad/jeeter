@@ -1,0 +1,55 @@
+/**
+ * @file
+ * Styling for the complex article template.
+ */
+
+.complex-article > .group-main-image,
+.complex-article > .group-extra-contents,
+.complex-article > .group-main-title,
+.complex-article > .group-autor {
+	clear: both;
+}
+.complex-article > .group-main-image,
+.complex-article > .group-main-title,
+.complex-article > .group-fecha {
+	margin: 0 auto;
+	text-align: center;
+}
+.complex-article > .group-autor-picture {
+	float: left;
+	margin-right: 20px;
+}
+.field-name-ds-user-picture {
+	max-width: 100px;
+	float: left;
+}
+
+.complex-article > .group-contents {
+	float: left; /* LTR */
+	width: 73%;
+	margin-right: 2%;
+}
+.complex-article .field-name-body p:first-child {
+  margin-top: 0;
+}
+
+.complex-article > .group-sidebar {
+	float: right; /* LTR */
+	width: 25%;
+}
+
+.complex-article > .group-footer {
+	clear: both;
+}
+
+@media only screen and (max-width: 767px) {
+	.complex-article > .group-contents,
+	.complex-article > .group-sidebar {
+		display: block !important;
+		clear: both !important;
+		float: none !important;
+		width: 100% !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+}
