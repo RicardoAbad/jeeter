@@ -3,7 +3,7 @@
 
 A customized new themme based in the Jeet Framework with aditional regions and JS Plugins.
 
-![Theme image](https://github.com/RicardoAbad/jeeter/logo.png)
+![Theme image](https://github.com/RicardoAbad/jeeter/jeeter_2/logo.png)
 
 ## Technologies
 
