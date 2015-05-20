@@ -13,6 +13,8 @@ A customized new themme based in the Jeet Framework with aditional regions and J
 * Jeet
 * & finally compiled in Node.JS
 
+Also used JQuery and some jquery plugins
+
 
 ## Feedback
 
